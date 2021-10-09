@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quotation
+{% endblock %}
+
+{% block main %}
+    <table class="table mt-5">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Fullname</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ stock_quote.symbol }}</td>
+                <td>{{ stock_quote.name }}</td>
+                <td>{{ stock_quote.price | usd}}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

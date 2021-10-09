@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap' rel='stylesheet'>
+        <link href='styles.css' rel='stylesheet'>
+        <title>Trivia!</title>
+
+        <script>
+            // Wait for page DOM loading before running code
+            document.addEventListener('DOMContentLoaded', function()
+            {
+
+                // Correct button interaction
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function()
+                {
+                    correct.style.backgroundColor= '#16C000';
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+
+                // Incorrect button interaction
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++)
+                {
+                    incorrects[i].addEventListener('click', function()
+                    {
+                        incorrects[i].style.backgroundColor= '#FF4F4F';
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect, please try again.';
+                    });
+
+                }
+
+                // Free response interaction
+                document.querySelector('#confirm').addEventListener('click', function(){
+                    let input = document.querySelector('input');
+                    if (input.value === 'Ernest') {
+                        input.style.backgroundColor = '#16C000';
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                    }
+                    else {
+                        input.style.backgroundColor = '#FF4F4F';
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect.';
+                    }
+                })
+
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class='jumbotron'>
+            <h1>Trivia Quiz!</h1>
+            <h5>A web-based simulated experience, built for CS50x</h5>
+        </div>
+
+        <div class='container'>
+
+            <div class='section'>
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Who is the best friend for a developer?</h3>
+                <button class='incorrect'>Mum</button>
+                <button class='correct'>The Duck</button>
+                <button class='incorrect'>Elon Musk</button>
+                <button class='incorrect'>Brian</button>
+
+                <p id='feedback1'></p>
+
+            </div>
+
+            <div class='section'>
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What's the name of the most infamous thief of Fiftyville?</h3>
+                <input type='text'></input>
+                <button id='confirm'>Confirm</button>
+
+                <p id='feedback2'></p>
+
+            </div>
+
+        </div>
+    </body>
+</html>

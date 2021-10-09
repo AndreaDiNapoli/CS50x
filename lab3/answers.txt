@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: It's the only algorythm that perform extremely faster with a sorted input than with a random ones. This means his omega is lower AND that is different from his bigO, so it must be the bubble sorting algorythm.
+
+sort2 uses: merge sort
+
+How do you know?: It's the algorythm which perform better by far with larger number of input value, both reversed or randomized. It must be the merge sort algorythm, which has the lower bigO value. This algorythm is outperformed only with an high sorted input list (by sort1), becouse its Omega value remain the same as bigO, so it's not optimized for a lucky input.
+
+sort3 uses: selection sort
+
+How do you know?: It's the remaing one, so it must be the selection sort algorythm. Poor performance on higher loadwork and no substantial difference for arleady sorted input confirm that sort3 has a high bigO value which is no different than his Omega one, such as expected for a selection sort algorythm.

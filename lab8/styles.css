@@ -1,0 +1,74 @@
+body {
+    background-color: #fff;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 200;
+    text-align: left;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.jumbotron {
+    background-color: #5A359C;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.section {
+    padding: 0.5rem 2rem 1rem 2rem;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button, input[type="submit"] {
+    background-color: #FEC960;
+    border: 1px solid transparent;
+    border-radius: 0.30rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 1rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: #FBA700;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+
+input[type="text"] {
+    line-height: 2;
+    width: 50%;
+    border: 2px solid #FEC960;
+}
+
+input[type="text"]:hover {
+    background-color: #FFEDCA;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+    border: 2px solid #FBA700;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}

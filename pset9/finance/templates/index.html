@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="jumbotron jumbotron-fluid bg-light">
+      <div class="container">
+        <h1 class="display-4">Welcome back, <b class="username_h2">{{ username }}</b></h1>
+      </div>
+    </div>
+    <h4 class="text-left">Your account</h4>
+    <div class="row">
+        <div class="col">
+            <div class="card bg-light mb-3 mt-2">
+                <div class="card-header">CASH BALANCE</div>
+                <div class="card-body">
+                    <p class="card-text">$ {{ balance | usd}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card bg-light mb-3 mt-2">
+                <div class="card-header">GRAND TOTAL</div>
+                <div class="card-body">
+                    <p class="card-text">$ {{ grand_total | usd}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Fullname</th>
+                <th scope="col">Price</th>
+                <th scope="col">Owned share</th>
+                <th scope="col">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for portfolio in portfolios %}
+            <tr>
+                <td>{{ portfolio.symbol }}</td>
+                <td>{{ portfolio.name }}</td>
+                <td>$ {{ portfolio.price | usd}}</td>
+                <td>{{ portfolio.shares }}</td>
+                <td>$ {{ portfolio.value | usd}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

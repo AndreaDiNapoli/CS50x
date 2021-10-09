@@ -1,0 +1,124 @@
+body
+{
+background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+font-family: 'Fira Sans', sans-serif;
+}
+
+h1
+{
+font-weight: 900;
+font-size: 5rem;
+margin-top:40px;
+margin-bottom:20px;
+}
+
+h3
+{
+font-weight: bold;
+font-size: 2rem;
+margin-bottom:20px;
+}
+
+h4
+{
+font-weight: bold;
+font-size: 1.5rem;
+margin-bottom:20px;
+}
+
+p
+{
+font-weight: bold;
+}
+
+.fav
+{
+margin: 10px;
+align-self: center;
+}
+
+#ops
+{
+font-weight: lighter;
+font-size: 1rem;
+color: black;
+}
+
+#ops:hover
+{
+    color:red;
+}
+
+.card-img-top
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.btn-secondary
+{
+    background-color: #AE0001;
+    border: 2px grey;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1rem;
+}
+
+.btn-secondary:hover
+{
+    background-color: #8B0000;
+    border: 2px black;
+}
+
+.form
+{
+    background-color: #383838;
+    padding: 50px;
+    margin-top:50px;
+    color: white;
+}
+
+#pizza
+{
+    font-size: 1.1rem;
+}
+
+#sushi
+{
+    color:orange;
+}
+
+#burgher
+{
+    text-decoration: line-through;
+}
+
+input[type=email]
+{
+    background-color:pink;
+}
+
+#fake
+{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.giphy-embed
+{
+    margin-top: 40px;
+}
+
+.fav-container
+{
+    margin-top: 50px;
+}
+
+.games
+{
+    font-weight:bold;
+    font-size: 1.2rem;
+}
